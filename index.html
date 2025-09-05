@@ -5,138 +5,332 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <title>Tropicália</title>
+    <title>Laluz Cultura</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="script.js"></script>
 <body>
-    <header class=" p-5">
-
+    <header class="p-5">
         <nav class="container d-flex justify-content-between align-items-center">
-            <img src="img/logo.png" class="nav-img " loading="lazy">
+            <img src="img/Laluz__1_-removebg-preview.png" class="nav-img" loading="lazy">
             <ul class="nav mt-5">
                 <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#livros">Livros</a></li>
+                <li class="nav-item"><a class="nav-link" href="#cantores">Cantores</a></li>
                 <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
             </ul>
-
             <div id="acessibilidade" class="menu-acessibilidade">
-                <button id="botao-acessibilidade" class="btn btn-primary rotacao-botao fw-bold">Acessibilidade</button>
-                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista ">
-                    <button id="aumentar-fonte" class="btn btn-primary fw-bold">A +</button>
-
-                    <button id="diminuir-fonte" class="btn btn-primary fw-bold">A -</button>
-
+                <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao" aria-expanded="false">Acessibilidade</button>
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+                    <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button>
+                    <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="Diminuir o tamanho da fonte">A-</button>
+                    <button id="alterna-contraste" class="btn btn-primary fw-bold" aria-label="Alternar o contraste de cores"> <i class="bi bi-shadows"></i></button>
                 </div>
             </div>
-
         </nav>
-
     </header>
-
 
     <main class="container my-5">
 
+        <!-- Início -->
         <section id="inicio" class="my-5">
             <div class="inicio-fundo d-flex justify-content-between align-items-center">
                 <div class="esquerda-conteudo">
-                    <h1 class="display-4 text-white fst-italic fw-bold">Boas-vindas a</h1>
-                    <img src="img/logo-2.png" class="mb-3" width="563" height="278" loading="lazy">
-                    <a href="#tropicalia" class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero
-                        conhecer!</a>
+                    <h1 class="display-4 text-white fst-italic fw-bold">Bem-vindo(a) ao cantinho da Lala!</h1>
+                    <p class="text-light">Aqui você encontra indicações de livros e de cantores.</p>
+                    <a href="#livros" class="btn btn-primary btn-lg botao-inicio fw-semibold">Ver</a>
                 </div>
-                <img src="img/lossy-page1-640px-Os_Mutantes.tif (1).png"
-                    alt="A imagem apresenta o grupo musical Os mutantes, sao tres pessoas cantando em  dois microfones"
-                    title="Os mutantes - CC0 Domínio Público / Acervo Arquivo Nacional" class="img-fluid img-inicio">
-
+               
             </div>
         </section>
 
-        <section id="tropicalia" class="my-5 pt-6 secao-tropicalia">
-            <div class="container d-flex align-items-center ">
-                <div class="col-4 d-flex justify-content-center">
-                    <img src="img/image (1).png" class="rounded-pill" alt="" width="273" height="331" loading="lazy">
+      <!-- Livros -->
+<section id="livros" class="my-5">
+    <h2 class="text-center">indicações da Lala</h2>
+    <div class="row mt-4">
+        <!-- Livro 1 -->
+        <div class="col-md-4">
+            <div class="card shadow-lg rounded-4">
+                <img src="img/percy.jpg" class="card-img-top rounded-top-4" alt="Capa do livro 1">
+                <div class="card-body">
+                    <h5 class="card-title">Percy Jackson e os Olimpianos</h5>
+                    <p class="card-text">Nesta saga, acompanhamos Percy Jackson, um garoto que descobre ser um semideus — filho de um deus grego com uma humana. Ao se deparar com esse novo mundo, ele precisa lidar com perigos que só quem carrega sangue divino conhece. Para sobreviver (e não enlouquecer), Percy vai parar no Acampamento Meio-Sangue, um lugar secreto onde outros semideuses treinam e aprendem a enfrentar o destino.
+
+É uma aventura que mistura mitologia, amizade e muitas reviravoltas. Essa saga tem meu coração e com certeza é uma das minhas favoritas da vida. 💙
+
+⭐ Nota: 5/5</p>
                 </div>
-                <div class="col-5">
-                    <h2>O que foi a Tropicália?</h2>
-                    <p class="p-2">A Tropicália, também conhecida como Tropicalismo, foi um movimento cultural
-                        brasileiro que surgiu na década de 1960, tendo seu auge entre 1967 e 1968. Esse movimento
-                        abrangeu várias expressões artísticas, como a música, o cinema, o teatro e as artes plásticas, e
-                        teve como principal característica a mistura de elementos da cultura brasileira tradicional com
-                        influências estrangeiras, especialmente do rock e da música pop. Fonte: Site Toda a matéria</p>
+            </div>
+        </div>
+        <!-- Livro 2 -->
+        <div class="col-md-4">
+            <div class="card shadow-lg rounded-4">
+                <img src="img/minha melhor parte.jpg" class="card-img-top rounded-top-4" alt="Capa do livro 2">
+                <div class="card-body">
+                    <h5 class="card-title">Minha Melhor Parte</h5>
+                    <p class="card-text">Minha Melhor Parte conta a história de Winnifred (Win) McNutty, uma mulher independente e cheia de determinação, que nunca deixou a deficiência em sua mão definir quem ela é. Numa festa de Halloween, ela cruza o caminho de Bo, um homem igualmente marcante e que também vive com uma deficiência. A química entre os dois é imediata e intensa, começando como algo casual.
+
+Mas a vida, imprevisível como sempre, muda tudo quando Win descobre, algumas semanas depois, que está grávida. 💫 A partir daí, acompanhamos um enredo emocionante, que mistura vulnerabilidade, força, desejo e escolhas que transformam vidas.
+
+É uma leitura que aquece o coração e me deixou completamente entregue.
+⭐ Nota: 5/5 — amo demais!</p>
+                </div>
+            </div>
+        </div>
+        <!-- Livro 3 -->
+        <div class="col-md-4">
+            <div class="card shadow-lg rounded-4">
+                <img src="img/A Seleção.jpg" class="card-img-top rounded-top-4" alt="Capa do livro 3">
+                <div class="card-body">
+                    <h5 class="card-title">A Seleção</h5>
+                    <p class="card-text">A Seleção, de Kiera Cass, abre uma série distópica encantadora em que conhecemos America Singer, uma jovem simples que acaba entrando, quase contra a vontade, em um concurso para conquistar o coração do príncipe Maxon. Entre intrigas no palácio, rivalidades e um triângulo amoroso cheio de dilemas, America precisa lidar com seus sentimentos e escolher entre a vida que sempre conheceu e a possibilidade de um amor inesperado.
+
+Eu amei cada página desse conto de fadas moderno com pitadas de crítica social e romance envolvente. 💖
+⭐ Nota: 5/5.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <!-- Livro 4 -->
+        <div class="col-md-4">
+            <div class="card shadow-lg rounded-4">
+                <img src="img/amor.jpg" class="card-img-top rounded-top-4" alt="Capa do livro 4">
+                <div class="card-body">
+                    <h5 class="card-title">Amor e Azeitonas</h5>
+                    <p class="card-text">Amor & Azeitonas, de Jenna Evans Welch, conta a história de Liv, que viaja à Grécia para reencontrar o pai distante e se envolve em uma jornada de autodescoberta, segredos de família e claro, romance. Em meio a ruínas antigas, mares azul-turquesa e muitas azeitonas, ela precisa lidar com sentimentos intensos e descobrir o que realmente importa em sua vida.
+
+É uma leitura leve, romântica e cheia de paisagens de tirar o fôlego. Eu simplesmente amei, fiquei suspirando até depois de fechar o livro. 💕
+⭐ Nota: 5/5</p>
+                </div>
+            </div>
+        </div>
+        <!-- Livro 5 -->
+        <div class="col-md-4">
+            <div class="card shadow-lg rounded-4">
+                <img src="img/melhor doq.jpg" class="card-img-top rounded-top-4" alt="Capa do livro 5">
+                <div class="card-body">
+                    <h5 class="card-title">Melhor do que nos filmes</h5>
+                    <p class="card-text">Melhor do Que nos Filmes, de Lynn Painter, é um romance adolescente cheio de humor e doçura. Acompanha Liz, uma garota romântica que sempre sonhou viver um amor digno das comédias românticas que ama assistir. Só que a vida, claro, não segue roteiro de filme — e no meio de planos, confusões e encontros inesperados, Liz descobre que o verdadeiro romance pode estar onde ela menos imagina.
+
+Eu gostei muito, é fofo, divertido e rende vários suspiros, mas não me conquistou logo de primeira .
+⭐ Nota: 4/5</p>
+                </div>
+            </div>
+        </div>
+        <!-- Livro 6 -->
+        <div class="col-md-4">
+            <div class="card shadow-lg rounded-4">
+                <img src="img/nao é.jpg" class="card-img-top rounded-top-4" alt="Capa do livro 6">
+                <div class="card-body">
+                    <h5 class="card-title">Não é como nos filmes </h5>
+                    <p class="card-text">Não É Como nos Filmes é a doce e emocionante continuação de Melhor do que nos Filmes. A história acompanha Wes e Liz, agora separados após um momento difícil, dois anos depois reencontrando a chance de reatar na universidade. Wes está decidido a reconquistar Liz, que por sua vez vive com responsabilidades, um possível novo amor e muita mágoa. Entre nostalgia de comédias românticas, referências musicais (oi, Taylor Swift!) e amadurecimento, eles mostram que nem sempre o “felizes para sempre” é tão simples… mas, ah, é intenso! 
+
+Eu AMEI com todas as forças, chorei, sorri e vibrei com cada página.
+⭐ Nota: 10000/5 — estou completamente obcecada!.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+    <!-- Livro 7 -->
+    <div class="col-md-4">
+        <div class="card shadow-lg rounded-4">
+            <img src="img/os karas.webp" class="card-img-top rounded-top-4" alt="Capa do livro 7">
+            <div class="card-body">
+                <h5 class="card-title">A droga da Obediência</h5>
+                <p class="card-text">A Droga da Obediência é um clássico da literatura juvenil brasileira. Nele, conhecemos os Karas, um grupo de amigos curiosos e corajosos que acabam investigando uma série de desaparecimentos misteriosos de estudantes. A trama envolve segredos, perigos e uma droga capaz de tirar a vontade própria das pessoas — um suspense eletrizante que mistura aventura, amizade e coragem.
+
+Eu amei mergulhar nessa história cheia de mistério e adrenalina. É daqueles livros que a gente lê rápido porque não consegue largar!
+   ⭐ Nota: 5/5</p>
+            </div>
+        </div>
+    </div>
+    <!-- Livro 8 -->
+    <div class="col-md-4">
+        <div class="card shadow-lg rounded-4">
+            <img src="img/castelo.jpg" class="card-img-top rounded-top-4" alt="Capa do livro 8">
+            <div class="card-body">
+                <h5 class="card-title">O castelo animado</h5>
+                <p class="card-text">O Castelo Animado é um conto mágico e encantador que apresenta Sophie, uma jovem que, após ser amaldiçoada por uma bruxa, acaba presa em um corpo de idosa. Na busca por quebrar o feitiço, ela encontra Howl, o misterioso e excêntrico mago que vive em um castelo ambulante cheio de segredos.
+
+A história mistura fantasia, humor, romance e reflexões sobre identidade e coragem. É um livro que parece um sonho acordado, daqueles que aquecem o coração e expandem a imaginação.
+
+Eu amei demais, fiquei completamente encantada com o mundo criado e com os personagens cativantes.
+⭐ Nota: 5/5</p>
+            </div>
+        </div>
+    </div>
+    <!-- Livro 9 -->
+    <div class="col-md-4">
+        <div class="card shadow-lg rounded-4">
+            <img src="img/a princesa.jpg" class="card-img-top rounded-top-4" alt="Capa do livro 9">
+            <div class="card-body">
+                <h5 class="card-title">A princes salva a si mesma neste livro </h5>
+                <p class="card-text">A Princesa Salva a Si Mesma Neste Livro é um conjunto de poemas que fala sobre dor, perda, amor, cura e, principalmente, força feminina. Amanda Lovelace escreve de forma simples e direta, mas que atinge fundo, como se cada verso fosse um abraço ou um soco no coração.
+
+É um livro que mostra que nem sempre precisamos de um príncipe encantado: às vezes, a maior salvação vem de dentro de nós mesmas.
+
+Eu amei cada página, me senti tocada e inspirada. 💖
+⭐ Nota: 5/5</p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</section>
+
+        <!-- Músicas -->
+        <section id="musicas" class="my-5">
+            <h2 class="text-center">Cantores favoritos da Lala</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card shadow-lg rounded-4">
+                        <img src="img/mari.webp" class="card-img-top rounded-top-4" alt="Capa do álbum">
+                        <div class="card-body">
+                            <h5 class="card-title">Marisa Monte</h5>
+                            <p class="card-text">Marisa Monte, pra mim, tem uma das vozes mais doces e intensas da nossa MPB. Ela consegue transformar sentimentos em melodia, como se cada música fosse uma conversa íntima comigo. “A Sua” é uma das minhas favoritas, porque me faz sentir o amor na forma mais pura. “Pra Ser Sincero” tem aquele toque de vulnerabilidade que só ela consegue transmitir, e “Bem Que Se Quis” é um clássico que sempre me arrepia, toda vez que toca.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-lg rounded-4">
+                        <img src="img/legiao-urbana.webp" class="card-img-top rounded-top-4" alt="Capa do álbum">
+                        <div class="card-body">
+                            <h5 class="card-title">Legião Urbana</h5>
+                            <p class="card-text">Legião Urbana, pra mim, é mais que música: é poesia que faz sentir e pensar. Pais e Filhos fala das dores familiares, Quase Sem Querer traduz sentimentos guardados, Hoje a Noite Não Tem Luar toca pela simplicidade e Faroeste Caboclo é uma narrativa marcante de romance, crítica e tragédia. Ouvir Legião é se perder e se encontrar nas emoções que eles transformaram em canção.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-lg rounded-4">
+                        <img src="img/Lana-Del-Rey.webp" class="card-img-top rounded-top-4" alt="Capa do álbum">
+                        <div class="card-body">
+                            <h5 class="card-title">Lana Del Rey</h5>
+                            <p class="card-text">Eu amo Lana Del Rey porque ela consegue transformar tristeza e nostalgia em algo lindo. Em “Black Beauty”, sinto a intensidade da paixão e da dor de um jeito que me pega de surpresa. “Pretty When You Cry” é a minha favorita quando quero sentir aquela vulnerabilidade bonita, sabe? E “Young and Beautiful” me faz refletir sobre o tempo, o amor e a juventude, com uma melancolia que, de algum jeito, é reconfortante. Pra mim, ouvir Lana é como entrar num pequeno filme emocional onde cada música toca fundo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-lg rounded-4">
+                        <img src="img/Taylor-Swift.jpg" class="card-img-top rounded-top-4" alt="Capa do álbum">
+                        <div class="card-body">
+                            <h5 class="card-title">Taylor Swift</h5>
+                            <p class="card-text">Taylor Swift sempre me faz sentir tudo ao mesmo tempo! Em “The Way I Loved You”, eu sinto aquele amor intenso, cheio de altos e baixos, e parece que ela entende exatamente o que eu penso sobre amar de verdade. “Love Story” é meu conto de fadas favorito, porque me faz acreditar que o amor pode superar qualquer coisa. E “Enchanted” é simplesmente mágico — me dá aquela sensação de que encontros especiais podem durar pra sempre. Pra mim, Taylor é perfeita pra quando quero me perder em histórias de amor que são lindas e reais ao mesmo tempo.</p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-4">
+                    <div class="card shadow-lg rounded-4">
+                        <img src="img/justen.jpg" class="card-img-top rounded-top-4" alt="Capa do álbum">
+                        <div class="card-body">
+                            <h5 class="card-title">Justin Bieber</h5>
+                            <p class="card-text">Justin Bieber, pra mim, é daqueles artistas que conseguem fazer a gente sentir cada música de um jeito diferente, seja paixão, diversão ou intensidade. “Flatline” é minha favorita quando quero sentir emoção de verdade — tem uma energia intensa que me pega de jeito. “Company” é perfeita pra momentos mais leves, mostrando aquele lado carinhoso e próximo dele. “Beauty and a Beat” é diversão pura, aquela música que faz querer dançar sem pensar em nada. E “No Sense” é uma mistura de atitude e melodia viciante, que me faz ficar cantando sem perceber.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="galeria">
-            <h2 class="text-center pt-5">Galeria</h2>
-            <div class="container p-3 mt-3 fundo-galeria ">
+   <section id="galeria" tabindex="0" aria-label="Seção de galeria de imagens">
+    <h2 class="text-center pt-5">Cantinho de memórias</h2>
+    <div class="container p-3 mt-3 fundo-galeria">
+        <div class="row g-4 justify-content-center">
 
-                <div class="row justify-content-md-center">
-                    <div class="col-md-4">
-                        <img src="img/lossy-page1-640px-Jorge_Ben_e_o_Trio_Mocotó_no_Teatro_da_Lagoa,_1971.tif.jpg"
-                            class="img-fluid rounded-5" loading="lazy">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="img/lossy-page1-640px-Os_Mutantes_2.tif.jpg" class="img-fluid rounded-5"
-                            loading="lazy">
-                    </div>
-                </div>
-                <div class="row mt-4  justify-content-md-center">
-                    <div class="col-md-4">
-                        <img src="img/lossy-page1-640px-Gilberto_Gil_nos_anos_1960.tif.jpg" class="img-fluid rounded-5"
-                            loading="lazy">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="img/lossy-page1-640px-Caetano_Veloso_no_III_Festival_da_Música_Popular.tif.jpg"
-                            class="img-fluid rounded-5" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </section>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/la.jpg" alt="Memória 1" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.20.02 (1).jpeg" alt="Memória 2" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.20.02 (2).jpeg" alt="Memória 3" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.20.02.jpeg" alt="Memória 4" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.20.03 (1).jpeg" alt="Memória 5" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.20.03 (2).jpeg" alt="Memória 6" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.20.03 (3).jpeg" alt="Memória 7" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.20.03.jpeg" alt="Memória 8" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.20.04 (1).jpeg" alt="Memória 9" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.20.04 (2).jpeg" alt="Memória 10" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.20.04 (3).jpeg" alt="Memória 11" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/hh.jpg" alt="Memória 12" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.20.04.jpeg" alt="Memória 13" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.20.05 (1).jpeg" alt="Memória 14" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.20.05 (2).jpeg" alt="Memória 15" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.20.05.jpeg" alt="Memória 16" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.20.06 (1).jpeg" alt="Memória 17" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.20.06 (2).jpeg" alt="Memória 18" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.20.06.jpeg" alt="Memória 19" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.20.07 (1).jpeg" alt="Memória 20" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.20.07 (2).jpeg" alt="Memória 21" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.20.07 (3).jpeg" alt="Memória 22" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.20.07 (4).jpeg" alt="Memória 23" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.20.07.jpeg" alt="Memória 24" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.20.08 (1).jpeg" alt="Memória 25" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.20.08 (2).jpeg" alt="Memória 26" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.20.08 (3).jpeg" alt="Memória 27" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.20.08.jpeg" alt="Memória 28" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.20.09 (1).jpeg" alt="Memória 29" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.20.09 (2).jpeg" alt="Memória 30" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.20.09 (3).jpeg" alt="Memória 31" class="img-fluid rounded-5 shadow" loading="lazy"></div>
 
-        <section id="contato">
-            <div class="container p-5 d-flex justify-content-center">
-                <div class="col-md-8 col-lg-10 rounded-5 formulario"> <!-- Caixa do formulário com 60% de largura -->
-                    <h2 class="mb-3">Entre em contato</h2>
-                    <form>
-                        <div class="form-group mb-3">
-                            <label for="nome">Nome</label>
-                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"
-                                placeholder="Digite seu nome completo">
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1"
-                                placeholder="Digite seu email">
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="mensagem">Mensagem</label>
-                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4"
-                                placeholder="Escreva sua mensagem"></textarea>
-                        </div>
-                        <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar
-                                mensagem</button>
-                        </div>
-                    </form>
-                </div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.20.09.jpeg" alt="Memória 1" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.20.10 (1).jpeg" alt="Memória 2" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.20.10 (2).jpeg" alt="Memória 3" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.20.10.jpeg" alt="Memória 4" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.20.11 (1).jpeg" alt="Memória 5" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.20.11.jpeg" alt="Memória 6" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.29.36 (1).jpeg" alt="Memória 7" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.29.36 (2).jpeg" alt="Memória 8" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.29.36.jpeg" alt="Memória 9" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.29.37 (1).jpeg" alt="Memória 10" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.29.37 (2).jpeg" alt="Memória 11" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.29.37.jpeg" alt="Memória 11" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.29.38 (1).jpeg" alt="Memória 11" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.29.38 (2).jpeg" alt="Memória 11" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.29.40.jpeg" alt="Memória 11" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.29.39.jpeg" alt="Memória 11" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.29.39 (3).jpeg" alt="Memória 11" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.29.39 (1).jpeg" alt="Memória 11" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+            <div class="col-12 col-sm-6 col-md-4"><img src="img/WhatsApp Image 2025-09-03 at 19.29.39 (2).jpeg" alt="Memória 11" class="img-fluid rounded-5 shadow" loading="lazy"></div>
+
+        </div>
+    </div>
+</section>
+  
+
+<!-- Contato -->
+<section id="contato" class="my-5">
+    <div class="container formulario rounded-4">
+        <h2 class="mb-3 text-center">Entre em contato</h2>
+        <form action="https://formsubmit.co/lalaalvescoutinhoub@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+
+            <div class="mb-3">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" class="form-control rounded-3" placeholder="Digite seu nome completo" required>
             </div>
-        </section>
+            <div class="mb-3">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" class="form-control rounded-3" placeholder="Digite seu email" required>
+            </div>
+            <div class="mb-3">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="4" class="form-control rounded-3" placeholder="Escreva sua mensagem" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg w-100">Enviar mensagem</button>
+        </form>
+    </div>
+</section>
+
     </main>
-    <footer class="text-center p-3 fst-italic">
+
+    <!-- Footer -->
+    <footer class="text-center p-4">
         <p>Acesse nossas redes:</p>
-        <i class="bi bi-whatsapp"></i>
-        <i class="bi bi-instagram"></i>
-        <i class="bi bi-tiktok"></i>
-        <p class="mt-3">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
+        <a href="https://11965843644" target="_blank" class="text-light mx-2"><i class="bi bi-whatsapp fs-3"></i></a>
+        <a href="https://https://www.instagram.com/pvd_alvesgt/" target="_blank" class="text-light mx-2"><i class="bi bi-instagram fs-3"></i></a>
+        <p class="mt-3">Desenvolvido por Lais Alves Coutinho ©</p>
     </footer>
 
-    <script src="script.js"></script>
-
-</body>
-
+  
 </html>
